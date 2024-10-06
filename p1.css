@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+.about-content {
+  width: 45%;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.learn-more {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00aa00;
+}
+
+.about-graphics {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.main-graphic {
+  width: 150px;
+  height: 150px;
+  background-color: #00cc00;
+  border-radius: 50%;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-item h3 {
+  color: #00aa00;
+}
+
+.smile-graphic {
+  width: 100px;
+  height: 50px;
+  border: 3px solid #00aa00;
+  border-radius: 50%;
+  position: relative;
+}
+
+.smile-graphic::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #00aa00;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.faq {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin: 10px 0;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #00aa00;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.resources,
+.developers {
+  text-align: left;
+}
+
+.resources h4,
+.developers h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.deploy-btn {
+  background-color: #ffcc00;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-graphic {
+    margin-top: 20px;
+  }
+}
